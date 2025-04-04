@@ -23,7 +23,7 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("procedimentos.json") // Substitua pelo caminho correto do JSON
+  fetch("https://maurinho2025.github.io/luana/procedimentos.json") // Substitua pelo caminho correto do JSON
     .then((response) => response.json())
     .then((data) => {
       const container = document.getElementById("procedimentos-carrossel");

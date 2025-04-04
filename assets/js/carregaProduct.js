@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // Busca o JSON localmente
-    const response = await fetch("/procedimentos.json");
+    const response = await fetch("https://maurinho2025.github.io/procedimentos.json");
     if (!response.ok) throw new Error("Erro ao carregar os dados.");
 
     const data = await response.json();

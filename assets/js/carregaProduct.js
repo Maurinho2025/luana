@@ -16,9 +16,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     const procedimentos = data.procedimentos;
 
     // Encontra o procedimento correspondente no JSON
-    const procedimento = procedimentos.find(
-      (p) => p.nome.toLowerCase() === procedimentoNome.toLowerCase()
-    );
+  //const procedimento = procedimentos.find(
+ // (p) => p.nome.toLowerCase() === procedimentoNome.toLowerCase()
+ // );
+ function normalizarTexto(texto) {
+  return texto
+    .normalize("NFD") 
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim(); 
+}
+
+const procedimento = procedimentos.find(
+  (p) => normalizarTexto(p.nome) === normalizarTexto(procedimentoNome)
+);
 
     if (!procedimento) {
       console.error("Procedimento não encontrado.");
@@ -26,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Atualiza os elementos da página com os dados do procedimento
-    document.getElementById("procedimento-titulo").innerText =
+  /*ocument.getElementById("procedimento-titulo").innerText =
       procedimento.nome;
 
     document.getElementById("primeiro-texto").innerHTML =
@@ -37,7 +48,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.getElementById("imagem-procedimento").src =
       procedimento.imagem_procedimento;
+*/
+if (document.getElementById("procedimento-titulo")) {
+  document.getElementById("procedimento-titulo").innerText = procedimento.nome;
+}
 
+if (document.getElementById("primeiro-texto")) {
+  document.getElementById("primeiro-texto").innerHTML = procedimento.primeiro_texto || "Descrição não disponível";
+}
+
+if (document.getElementById("segundo-texto")){
+  document.getElementById("segundo-texto").innerHTML = procedimento.segundo_texto || "descrição não disponível";
+}
+
+if (document.getElementById("imagem-procedimento")) {
+  document.getElementById("imagem-procedimento").src = procedimento.imagem_procedimento || "https://dummyimage.com/300x200/ccc/000";
+}
 
   } catch (error) {
     console.error("Erro ao buscar os dados do procedimento:", error);

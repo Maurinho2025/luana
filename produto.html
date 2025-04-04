@@ -36,7 +36,6 @@
                 <nav>
                     <ul class="flex items-center gap-10 text-xl font-display text-title-color">
                         <li class="relative">
-                            <!-- link para abas de produto-->
                             <div class="group inline-block">
                                 <a href="index.html#procedimentos"
                                     class="relative before:transition-all before:duration-200 group-hover:before:w-full before:w-0 before:h-[2px] before:absolute before:bg-title-color before:-bottom-2 before:left-0">
@@ -49,18 +48,6 @@
                                         <li>
                                             <p class="font-bold">Odontologia Estética</p>
                                         </li>
-                                        <li><a href="#" onclick="redirecionar('Facetas de Resina')" class="block hover:text-second transition">Facetas de Resina</a></li>
-                                        <li><a href="#" onclick="redirecionar('Facetas de Cerâmica')" class="block hover:text-second transition">Facetas de Cerâmica</a></li>
-                                        <li><a href="#" onclick="redirecionar('Limpeza Dentária')" class="block hover:text-second transition">Limpeza Dentária</a></li>
-                                        <li><a href="#" onclick="redirecionar('Clareamento Dentário')" class="block hover:text-second transition">Clareamento Dentário</a></li>
-                                        <li><a href="#" onclick="redirecionar('Restaurações em Geral')" class="block hover:text-second transition">Restaurações em Geral</a></li>
-                                        <hr class="text-[#313131]">
-                                        <li><a href="#" onclick="redirecionar('Botox (Toxina Botulínica)')" class="block hover:text-second transition">Botox (Toxina Botulínica)</a></li>
-                                        <li><a href="#" onclick="redirecionar('Preenchimento de Olheiras')" class="block hover:text-second transition">Preenchimento de Olheiras</a></li>
-                                        <li><a href="#" onclick="redirecionar('Preenchimento Labial')" class="block hover:text-second transition">Preenchimento Labial</a></li>
-                                        <li><a href="#" onclick="redirecionar('Bioestimulador de Colágeno')" class="block hover:text-second transition">Bioestimulador de Colágeno</a></li>
-
-                                        <!--
                                         <li><a href="produto.html?procedimento=Facetas de Resina" class="block hover:text-second transition">Facetas de Resina</a>
                                         </li>
                                         <li><a href="produto.html?procedimento=Facetas de Cerâmica" class="block hover:text-second transition">Facetas de Cerâmica</a>
@@ -83,11 +70,9 @@
                                         </li>
                                         <li><a href="produto.html?procedimento=Bioestimulador de Colágeno" class="block hover:text-second transition">Bioestimulador de Colágeno</a>
                                         </li>
-                                    -->
                                     </ul>
                                 </div>
                             </div>
-                            <!-- fim das abas-->
                         </li>
 
                         <li class="group">
@@ -158,13 +143,15 @@
                         id="primeiro-texto">Utilizo a toxina botulínica para suavizar rugas dinâmicas da testa, ao redor dos olhos (“pés de galinha”) e entre as sobrancelhas. Além da estética, o botox também pode ser usado para tratar bruxismo e sorriso gengival, promovendo mais conforto e equilíbrio facial.</p>
                 </div>
                 <div class="w-full md:w-1/2">
-                    <img src="./assets/images/jpeg/dentes.jpg" alt="Imagem do Procedimento" id="imagem-procedimento" class="rounded-lg shadow-lg">
+                    <img src="./assets/images/jpeg/dentes.jpg" alt="Imagem do Procedimento" id="imagem-procedimento"
+                        class="rounded-lg shadow-lg">
                 </div>
             </div>
 
             <p class="mt-5 font-display text-xl text-justify text-[#313131] max-sm:text-base" id="segundo-texto">A toxina botulínica relaxa os músculos responsáveis pelas rugas dinâmicas, prevenindo a formação de novas linhas e suavizando as já existentes. O efeito é um rosto mais jovem, descansado e harmonioso, sem perder a expressividade.</p>
         </section>
 <!-- secao labial-->
+ <!--
         <section class="w-full max-w-[1180px] px-5 py-20 mx-auto min-h-20">
             <div class="flex flex-col md:flex-row items-center gap-10">
                 <div class="w-full md:w-1/2">
@@ -180,6 +167,7 @@
 
             <p class="mt-5 font-display text-xl text-justify text-[#313131] max-sm:text-base" id="segundo-texto">A toxina botulínica relaxa os músculos responsáveis pelas rugas dinâmicas, prevenindo a formação de novas linhas e suavizando as já existentes. O efeito é um rosto mais jovem, descansado e harmonioso, sem perder a expressividade.</p>
         </section>
+    -->
 
         <section class="w-full bg-white py-20">
             <div class="w-full max-w-[1180px] px-5 mx-auto">
@@ -235,11 +223,6 @@
     <script src="./assets/js/carregaProduct.js"></script>
 
     <script>
-        function redirecionar(procedimento) {
-    const url = `produto.html?procedimento=${encodeURIComponent(procedimento)}`;
-    window.location.href = url;
-}
-
         document.getElementById('menu-toggle').addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });

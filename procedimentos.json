@@ -52,7 +52,7 @@
       "nome": "Limpeza Dentária",
       "descricao": "Higiene e prevenção para um sorriso saudável",
       "primeiro_texto": "A profilaxia dentária é essencial para remover placas bacterianas e manter a saúde bucal em dia. Durante a consulta, faço uma limpeza detalhada e oriento sobre os melhores cuidados diários para prevenção de cáries e gengivite.",
-      "segundo_texto": "",
+      "segundo_texto": "Odontologia Estética ",
       "imagem": "./assets/images/webp/toxina_botulinica.webp",
       "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
     },
@@ -60,7 +60,7 @@
       "nome": "Clareamento Dentário",
       "descricao": "Sorriso mais branco e radiante com segurança",
       "primeiro_texto": "Ofereço clareamento dentário tanto a laser quanto com moldeiras personalizadas, garantindo dentes mais brancos e um sorriso radiante. A escolha da técnica depende do objetivo do paciente e da saúde bucal.",
-      "segundo_texto": "",
+      "segundo_texto": "Facetas de Resina ",
       "imagem": "./assets/images/webp/toxina_botulinica.webp",
       "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
     },

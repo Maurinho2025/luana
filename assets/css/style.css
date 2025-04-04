@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/ycf5rwl.css");
+@import url("https://use.typekit.net/ycf5rwl.css");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f4eae6;
+  --color-second: #e5d6ca;
+  --color-test: #e0d2c6;
+  --color-title-color: #8e6e55;
+  --color-gradient: linear-gradient(
+    90deg,
+    rgba(241, 202, 107, 1) 0%,
+    rgba(176, 122, 37, 1) 15%,
+    rgba(241, 202, 107, 1) 50%,
+    rgba(180, 127, 42, 1) 85%,
+    rgba(241, 202, 107, 1) 100%
+  );
+
+  --font-quiche: "quiche-sans", sans-serif;
+  --font-display: "montserrat", sans-serif;
+  --font-authography: "Autography", sans-serif;
+}
+
+@font-face {
+  font-family: Autography;
+  font-display: swap;
+  src: url("../fonts/Autography.otf") format("opentype");
+}

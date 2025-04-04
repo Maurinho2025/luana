@@ -1,0 +1,19 @@
+/* Alterar cor das setas */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #f4eae6;
+    /* Defina a cor desejada */
+}
+
+/* Alterar cor dos dots (paginações) */
+.swiper-pagination-bullet {
+    background: #8e6e55;
+    /* Cor padrão */
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f4eae6;
+    /* Cor do dot ativo */
+    opacity: 1;
+}

@@ -1,0 +1,76 @@
+{
+  "procedimentos": [
+    {
+      "nome": "Botox (Toxina Botulínica)",
+      "descricao": "Suavize Rugas e Restaure a Juventude da Sua Pele",
+      "primeiro_texto": "Utilizo a toxina botulínica para suavizar rugas dinâmicas da testa, ao redor dos olhos (“pés de galinha”) e entre as sobrancelhas. Além da estética, o botox também pode ser usado para tratar bruxismo e sorriso gengival, promovendo mais conforto e equilíbrio facial.",
+      "segundo_texto": "A toxina botulínica relaxa os músculos responsáveis pelas rugas dinâmicas, prevenindo a formação de novas linhas e suavizando as já existentes. O efeito é um rosto mais jovem, descansado e harmonioso, sem perder a expressividade.",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Preenchimento Labial",
+      "descricao": "Lábios mais volumosos, definidos e hidratados",
+      "primeiro_texto": "O preenchimento labial com ácido hialurônico proporciona lábios mais volumosos, definidos e hidratados, sempre respeitando a anatomia e a harmonia do rosto. Meu foco é realçar a beleza sem exageros, garantindo um resultado natural e elegante.",
+      "segundo_texto": "✔ Lábios mais volumosos e desenhados.<br>✔ Contorno labial bem definido.<br>✔ Hidratação intensa e duradoura.<br>✔ Resultado equilibrado e natural, sem exageros.",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Preenchimento de Olheiras",
+      "descricao": "Recupere o brilho do seu olhar",
+      "primeiro_texto": "Se você sente que suas olheiras deixam seu rosto com um aspecto cansado e abatido, o preenchimento com ácido hialurônico pode ser a solução ideal. Com uma aplicação segura e minimamente invasiva, devolvemos o volume perdido abaixo dos olhos, suavizando o sulco profundo e iluminando seu olhar.",
+      "segundo_texto": "O procedimento é rápido e confortável: após uma avaliação personalizada, aplicamos o ácido hialurônico de forma estratégica para garantir um resultado natural e harmonioso. O efeito já pode ser notado logo após a aplicação!",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Bioestimulador de Colágeno",
+      "descricao": "Rejuvenesça sua pele de forma natural e progressiva",
+      "primeiro_texto": "Os bioestimuladores ajudam a tratar a flacidez e melhorar a qualidade da pele ao estimular a produção de colágeno. São indicados para quem deseja um rejuvenescimento natural e progressivo, melhorando contornos faciais e a firmeza da pele.",
+      "segundo_texto": "Os bioestimuladores são substâncias injetáveis que estimulam naturalmente a produção de colágeno na pele, melhorando a firmeza e prevenindo a perda de sustentação ao longo do tempo. Eles não preenchem como o ácido hialurônico, mas reestruturam a pele de dentro para fora, trazendo resultados progressivos e duradouros.",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Facetas de Resina",
+      "descricao": "Corrija imperfeições e tenha um sorriso harmônico",
+      "primeiro_texto": "Se você deseja transformar seu sorriso, corrigindo pequenas imperfeições, manchas ou assimetrias, as facetas de resina são uma excelente opção para conquistar dentes mais alinhados e estéticos sem desgastes excessivos.",
+      "segundo_texto": "O procedimento é rápido e personalizado: analisamos seu sorriso, escolhemos a cor e formato ideal e aplicamos a resina diretamente sobre os dentes, esculpindo com precisão para um resultado natural e harmonioso. O efeito é imediato, proporcionando um sorriso mais bonito e confiante.",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Facetas de Cerâmica",
+      "descricao": "Sorriso impecável com durabilidade e sofisticação",
+      "primeiro_texto": "As facetas de cerâmica são a solução premium para um sorriso perfeito. Mais duráveis e resistentes a manchas, proporcionam um acabamento impecável e resultados de longo prazo.",
+      "segundo_texto": "O procedimento é feito com planejamento personalizado: analisamos seu sorriso, preparamos os dentes com mínimo desgaste e aplicamos a cerâmica, garantindo um resultado natural e resistente.",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Limpeza Dentária",
+      "descricao": "Higiene e prevenção para um sorriso saudável",
+      "primeiro_texto": "A profilaxia dentária é essencial para remover placas bacterianas e manter a saúde bucal em dia. Durante a consulta, faço uma limpeza detalhada e oriento sobre os melhores cuidados diários para prevenção de cáries e gengivite.",
+      "segundo_texto": "",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Clareamento Dentário",
+      "descricao": "Sorriso mais branco e radiante com segurança",
+      "primeiro_texto": "Ofereço clareamento dentário tanto a laser quanto com moldeiras personalizadas, garantindo dentes mais brancos e um sorriso radiante. A escolha da técnica depende do objetivo do paciente e da saúde bucal.",
+      "segundo_texto": "",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    },
+    {
+      "nome": "Restaurações em Geral",
+      "descricao": "Função e estética com naturalidade",
+      "primeiro_texto": "As restaurações dentárias são feitas com materiais estéticos e resistentes, devolvendo a função e a beleza dos dentes comprometidos por cáries ou fraturas. Meu objetivo é proporcionar um resultado que imite a aparência natural do dente.",
+      "segundo_texto": "",
+      "imagem": "./assets/images/webp/toxina_botulinica.webp",
+      "imagem_procedimento": "./assets/images/jpeg/dentes.jpg"
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dra Luana Naiz - Cirurgiã-dentista</title>
+
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="shortcut icon" href="./assets/images/png/favicon-32x32.png" type="image/x-icon">
+
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+
+
+    <!-- fontawsome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-[#f0f0f0] scroll-smooth">
+
+    <!-- Cabeçalho -->
+    <header class="w-screen bg-[#f0f0f0] shadow-lg shadow-test/60 min-h-20 fixed top-0 left-0 z-50">
+        <div class="w-full max-w-[1180px] px-5 h-20 mx-auto flex items-center justify-between">
+
+            <div class="h-full py-4">
+                <a href="index.html">
+                    <img class="object-cover h-full" src="./assets/images/png/Logo.png" alt="Logo do site">
+                </a>
+            </div>
+
+            <div class="max-sm:hidden">
+                <nav>
+                    <ul class="flex items-center gap-10 text-xl font-display text-title-color">
+                        <li class="relative">
+                            <div class="group inline-block">
+                                <a href="#procedimentos"
+                                    class="relative before:transition-all before:duration-200 group-hover:before:w-full before:w-0 before:h-[2px] before:absolute before:bg-title-color before:-bottom-2 before:left-0">
+                                    Procedimentos
+                                </a>
+
+                                <div
+                                    class="absolute left-0 w-70 bg-white shadow-lg shadow-gray-400/40 px-4 py-3 rounded-lg top-12 opacity-0 translate-y-3 scale-95 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 transition-all duration-300 ease-in-out invisible group-hover:visible">
+                                    <ul class="text-lg text-[#313131] flex flex-col gap-3">
+                                        <li>
+                                            <p class="font-bold">Odontologia Estética</p>
+                                        </li>
+                                        <!-- exemplo de link produto.html?procedimento=nome_do_procedimento -->
+                                        <li><a href="produto.html?procedimento=Facetas de Resina" class="block hover:text-second transition">Facetas de Resina</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Facetas de Cerâmica" class="block hover:text-second transition">Facetas de Cerâmica</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Limpeza Dentária" class="block hover:text-second transition">Limpeza Dentária</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Clareamento Dentário" class="block hover:text-second transition">Clareamento Dentário</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Restaurações em Geral" class="block hover:text-second transition">Restaurações em Geral</a>
+                                        </li>
+                                        <hr class="text-[#313131]">
+                                        <li>
+                                            <p class="font-bold">Harmonização Orofacial</p>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Botox (Toxina Botulínica)" class="block hover:text-second transition">Botox (Toxina Botulínica)</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Preenchimento Labial" class="block hover:text-second transition">Preenchimento Labial</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Preenchimento de Olheiras" class="block hover:text-second transition">Preenchimento de Olheiras</a>
+                                        </li>
+                                        <li><a href="produto.html?procedimento=Bioestimulador de Colágeno" class="block hover:text-second transition">Bioestimulador de Colágeno</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="group">
+                            <a href="#sobre-mim"
+                                class="relative before:transition-all before:duration-200 group-hover:before:w-full before:w-0 before:h-[2px] before:absolute before:bg-title-color before:-bottom-2 before:left-0">
+                                Sobre nós
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sm:hidden">
+                <button id="menu-toggle" class="text-xl font-display text-title-color focus:outline-none">
+                    &#9776;
+                </button>
+                <nav id="mobile-menu"
+                    class="hidden absolute top-16 left-0 w-full bg-white shadow-lg px-6 py-4 rounded-lg">
+                    <ul class="flex flex-col gap-4 text-xl font-display text-title-color">
+                        <li class="relative">
+                            <button id="submenu-toggle" class="block w-full text-left">Procedimentos</button>
+                            <div id="submenu" class="hidden px-4 py-3 mt-2">
+                                <ul class="text-lg text-[#313131] flex flex-col gap-3">
+                                    <li>
+                                        <p class="font-bold">Odontologia Estética</p>
+                                    </li>
+                                    <li><a href="produto.html?procedimento=Facetas de Resina" class="block hover:text-second transition">Facetas de Resina</a></li>
+                                    <li><a href="produto.html?procedimento=Facetas de Cerâmica" class="block hover:text-second transition">Facetas de Cerâmica</a></li>
+                                    <li><a href="produto.html?procedimento=Limpeza Dentária" class="block hover:text-second transition">Limpeza Dentária</a></li>
+                                    <li><a href="produto.html?procedimento=Clareamento Dentário" class="block hover:text-second transition">Clareamento Dentário</a></li>
+                                    <li><a href="produto.html?procedimento=Restaurações em Geral" class="block hover:text-second transition">Restaurações em Geral</a>
+                                    </li>
+                                    <hr class="text-[#313131]">
+                                    <li>
+                                        <p class="font-bold">Harmonização Orofacial</p>
+                                    </li>
+                                    <li><a href="produto.html?procedimento=Botox (Toxina Botulínica)" class="block hover:text-second transition">Botox (Toxina Botulínica)</a></li>
+                                    <li><a href="produto.html?procedimento=Preenchimento Labial" class="block hover:text-second transition">Preenchimento Labial</a></li>
+                                    <li><a href="produto.html?procedimento=Preenchimento de Olheiras" class="block hover:text-second transition">Preenchimento de Olheiras</a></li>
+                                    <li><a href="produto.html?procedimento=Bioestimulador de Colágeno" class="block hover:text-second transition">Bioestimulador de Colágeno</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#sobre-mim" class="block">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-20">
+
+        <!-- carrossel -->
+        <section class="w-full">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/webp/banner_site_posblack-03.webp"
+                            class="w-full max-sm:h-[300px] max-sm:object-cover max-sm:object-center">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/webp/banner_site_posblack-03.webp"
+                            class="w-full max-sm:h-[300px] max-sm:object-cover max-sm:object-center">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/webp/banner_site_posblack-03.webp"
+                            class="w-full max-sm:h-[300px] max-sm:object-cover max-sm:object-center">
+                    </div>
+                </div>
+                <div class="swiper-button-next text-white"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Procedimentos -->
+        <section class="w-full" id="procedimentos">
+            <div class="w-full max-w-[1180px] px-5 py-20 mx-auto min-h-20">
+                <h1
+                    class="font-quiche text-4xl font-bold text-title-color relative before:absolute before:h-[2px] before:w-[70%] before:bg-title-color before:top-1/2 before:right-0 before:translate-y-1/2 max-sm:before:hidden max-lg:before:w-[60%]">
+                    Procedimentos
+                </h1>
+                <div class="grid grid-cols-4 gap-5 mt-18 max-sm:grid-cols-2 max-lg:grid-cols-3"
+                    id="procedimentos-container">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre nós -->
+        <section class="w-full" id="sobre-mim">
+
+            <div class="w-full max-w-[1180px] px-5 py-20 mx-auto min-h-20">
+
+                <div class="flex gap-5 max-lg:flex-col-reverse">
+
+                    <div class="w-full">
+                        <img src="./assets/images/jpeg/luana.jpeg" class="w-full rounded-lg">
+                    </div>
+
+                    <div class="w-full">
+                        <h2
+                            class="mb-10 font-quiche text-4xl font-bold text-title-color relative before:absolute before:h-[2px] before:w-[60%] before:bg-title-color before:top-1/2 before:right-0 before:translate-y-1/2 max-sm:before:hidden max-lg:before:w-[60%]">
+                            Sobre mim
+                        </h2>
+
+                        <p class="my-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            Sou a Dra. Luana Naiz, cirurgiã-dentista especializada em Harmonização Orofacial e Prótese
+                            Dentária. Acredito que um sorriso bonito e um rosto harmônico têm o poder de elevar a
+                            autoestima e transformar vidas. Meu compromisso é oferecer um atendimento humanizado e
+                            personalizado, unindo técnica, arte e ciência para realçar a beleza natural de cada
+                            paciente.
+                        </p>
+
+                        <p class="my-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            Com anos de experiência na odontologia estética, desenvolvi um olhar atento aos detalhes e
+                            ao equilíbrio facial, sempre buscando resultados sutis e sofisticados. Meu trabalho é
+                            pautado na sutileza, na elegância e no cuidado individualizado, garantindo resultados
+                            harmônicos e naturais.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="w-full max-w-[1180px] px-5 py-20 mx-auto min-h-20">
+
+            <h2 class="font-quiche text-4xl font-bold text-title-color relative before:absolute before:h-[2px] before:w-[60%] before:bg-title-color before:top-1/2 before:right-0 before:translate-y-1/2 max-sm:before:hidden max-lg:before:w-[60%] mb-20" id="procedimento-titulo">Perguntas Frequentes</h2>
+
+            <div class="grid grid-cols-2 gap-5 max-lg:grid-cols-1">
+
+                <div class="w-full">
+                    <h3 class="accordion-header p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base font-bold border border-[#313131] cursor-pointer relative"
+                        onclick="toggleAccordion(this)">
+                        O que é preenchimento com ácido hialurônico?
+                        <i
+                            class="fa-solid fa-chevron-down transition-transform duration-300 absolute top-1/2 right-3 -translate-y-1/2"></i>
+                    </h3>
+                    <div
+                        class="accordion-body border border-t-0 border-[#313131] max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            O preenchimento com ácido hialurônico é um procedimento minimamente invasivo usado para
+                            restaurar volume e melhorar contornos faciais. O ácido hialurônico é uma substância
+                            naturalmente presente no corpo e tem a função de hidratar e dar suporte à pele. Pode ser
+                            aplicado nos lábios, queixo, mandíbula, olheiras, malar (maçãs do rosto) e sulco nasogeniano
+                            (bigode chinês).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <h3 class="accordion-header p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base font-bold border border-[#313131] cursor-pointer relative"
+                        onclick="toggleAccordion(this)">
+                        O que é botox?
+                        <i
+                            class="fa-solid fa-chevron-down transition-transform duration-300 absolute top-1/2 right-3 -translate-y-1/2"></i>
+                    </h3>
+                    <div
+                        class="accordion-body border border-t-0 border-[#313131] max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            Botox é o nome comercial da toxina botulínica, uma substância que relaxa temporariamente os
+                            músculos. É usada para suavizar rugas dinâmicas (como pés de galinha e linhas da testa),
+                            além de auxiliar na redução da sensação de rosto sério/bravo, é também utilizada para
+                            minimizar o bruxismo e sorriso gengival, além de ser utilizada para fins terapêuticos, como
+                            controle de enxaquecas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <h3 class="accordion-header p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base font-bold border border-[#313131] cursor-pointer relative"
+                        onclick="toggleAccordion(this)">
+                        O que é bioestimulador de colágeno?
+                        <i
+                            class="fa-solid fa-chevron-down transition-transform duration-300 absolute top-1/2 right-3 -translate-y-1/2"></i>
+                    </h3>
+                    <div
+                        class="accordion-body border border-t-0 border-[#313131] max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            Os bioestimuladores são substâncias injetáveis que estimulam a produção natural de colágeno,
+                            é um tratamento revolucionário que combate a sensação de “derretimento” da pele, trazendo
+                            mais firmeza e sustentação ao rosto, prevenindo e tratando a flacidez de forma progressiva e
+                            duradoura.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <h3 class="accordion-header p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base font-bold border border-[#313131] cursor-pointer relative"
+                        onclick="toggleAccordion(this)">
+                        O que são facetas de resina?
+                        <i
+                            class="fa-solid fa-chevron-down transition-transform duration-300 absolute top-1/2 right-3 -translate-y-1/2"></i>
+                    </h3>
+                    <div
+                        class="accordion-body border border-t-0 border-[#313131] max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            As facetas de resina são uma solução incrível para transformar o sorriso de forma rápida e
+                            acessível. Esse procedimento é praticamente artesanal, onde a resina é esculpida
+                            manualmente, dente por dente, com técnicas atuais e de alto padrão para alcançar um
+                            resultado natural e harmônico. Além de corrigir imperfeições como manchas, desgastes e
+                            pequenos desalinhamentos, as facetas de resina proporcionam um sorriso mais bonito e jovem
+                            em poucas sessões.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <h3 class="accordion-header p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base font-bold border border-[#313131] cursor-pointer relative"
+                        onclick="toggleAccordion(this)">
+                        O que são facetas de cerâmica?
+                        <i
+                            class="fa-solid fa-chevron-down transition-all duration-300 absolute top-1/2 right-3 -translate-y-1/2"></i>
+                    </h3>
+                    <div
+                        class="accordion-body border border-t-0 border-[#313131] max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 font-display text-xl text-justify text-[#313131] max-sm:text-base">
+                            As facetas de cerâmica são a escolha perfeita para quem busca um sorriso impecável com
+                            máxima durabilidade e naturalidade. Esse procedimento de alto padrão é realizado em conjunto
+                            com uma equipe de laboratório especializada, que confecciona cada faceta com uma cerâmica
+                            especial, personalizada para harmonizar perfeitamente com o rosto e o desejo do paciente.
+                            Com alta resistência e estabilidade de cor, as facetas de cerâmica garantem um resultado
+                            sofisticado e duradouro, transformando o sorriso com qualidade e precisão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="w-full bg-test">
+
+        <div class="w-full max-w-[1180px] px-5 pt-20 pb-5 mx-auto min-h-20">
+
+            <div class="flex justify-between max-sm:flex-col max-sm:justify-center">
+                <div>
+                    <img src="./assets/images/png/Logo.png" class="h-18 max-sm:mx-auto">
+                    <p class="my-5 font-display text-base text-justify text-[#313131] max-sm:text-center">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        dra.luananaiz@gmail.com
+                    </p>
+                </div>
+                <div class="max-sm:mb-10">
+                    <h3 class="font-display font-bold mb-2 text-[#313131] max-sm:text-center">Acompanhe nas redes</h3>
+                    <ul class="flex justify-end gap-5 text-2xl text-[#313131] max-sm:justify-center">
+                        <li>
+                            <a href="https://www.instagram.com/dra.luananaiz"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5547997736515?text=Oi%2C%20seja%20bem-vindo(a)!%20Aqui%20é%20a%20Dra.%20Luana%20Naiz%2C%20estou%20à%20disposição%20para%20te%20atender.%20Me%20envie%20seu%20nome%20e%20o%20tratamento%20que%20possui%20interesse%20em%20agendar.%20Assim%20que%20possível%2C%20retorno%20com%20as%20opções%20de%20horários.%20Qualquer%20dúvida%2C%20estou%20à%20disposição!"
+                                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center text-sm font-display text-[#313131]">
+                <p> © 2025 Dra Luana Naiz - Cirurgiã-dentista. Todos os direitos reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <article class="fixed size-14 bottom-10 right-10 z-50 flex items-center justify-center">
+        <div class="w-full h-full relative">
+            <a href="https://wa.me/5547997736515?text=Oi%2C%20seja%20bem-vindo(a)!%20Aqui%20é%20a%20Dra.%20Luana%20Naiz%2C%20estou%20à%20disposição%20para%20te%20atender.%20Me%20envie%20seu%20nome%20e%20o%20tratamento%20que%20possui%20interesse%20em%20agendar.%20Assim%20que%20possível%2C%20retorno%20com%20as%20opções%20de%20horários.%20Qualquer%20dúvida%2C%20estou%20à%20disposição!"
+                target="_blank">
+                <img src="./assets/images/png/whatsapp.png" alt="Icone whatsapp">
+            </a>
+            <span class="absolute size-3 top-0 right-1 animate-ping rounded-full bg-red-400 opacity-75"></span>
+            <span class="absolute size-3 top-0 right-1 rounded-full bg-red-600 "></span>
+        </div>
+    </article>
+
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/scriptProducts.js"></script>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('submenu-toggle').addEventListener('click', function () {
+            document.getElementById('submenu').classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+        function toggleAccordion(header) {
+            const body = header.nextElementSibling;
+            const icon = header.querySelector("svg");
+
+            // if (!icon) return;
+
+            if (body.style.maxHeight && body.style.maxHeight !== "0px") {
+                body.style.maxHeight = "0px";
+                icon.classList.remove("rotate-0");
+            } else {
+                body.style.maxHeight = body.scrollHeight + "px";
+                icon.classList.add("rotate-0");
+            }
+        }
+    </script>
+
+    <style>
+        .rotate-0 {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</body>
+
+</html>
